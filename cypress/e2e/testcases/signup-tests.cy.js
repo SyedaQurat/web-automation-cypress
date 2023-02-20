@@ -1,5 +1,4 @@
 import SignUp from "../pages/signup-functions.js";
-import Login from "../pages/login-functions";
 
 beforeEach(() => {
   cy.visit(Cypress.config().baseUrl);
@@ -19,16 +18,19 @@ describe("Navigation to Software testing board ", () => {
       SignUp.click_submit_button();
       cy.end();
     });
-    
-    it.only("should login successfully", () => {
+
+
+    it("should not signup successfully", () => {
       cy.viewport(Cypress.config().viewport);
-      Login.click_login_button();
-      Login.enter_customer_credentials(
-        Cypress.config().user_login.email, 
-        Cypress.config().user_login.password, 
-      )
-      Login.click_signin_button();
+      SignUp.click_signup_button() 
+      SignUp.user_no_details(
+        Cypress.config().user_details.firstname, 
+        Cypress.config().user_details.lastname,
+        Cypress.config().user_details.no_email, 
+        Cypress.config().user_details.password, 
+        Cypress.config().user_details.password_confirm)
+      SignUp.click_submit_button();
       cy.end();
     });
-  });
+  })
 });

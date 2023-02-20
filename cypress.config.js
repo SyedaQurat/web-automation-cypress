@@ -10,11 +10,13 @@ module.exports = defineConfig({
         firstname: "Syeda", 
         lastname: "Qurat", 
         email:"annie",
+        no_email:"123",
         password: "test123!!", 
         password_confirm: "test123!!"
   },
   user_login: { 
     email:"syeda.annie.asad@gmail.com",
+    incorrect_email: "syeda.anniee.asad@gmail.com",
     password: "test123!!", 
 },
     setupNodeEvents(on, config) {
