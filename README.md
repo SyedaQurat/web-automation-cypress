@@ -1,10 +1,15 @@
 # Web Automation #
 
-We are aiming to do automation on **[monese.com](https://monese.com/gb/en)** with the help of [Cypress](https://www.cypress.io/) testing tool.
+We are aiming to do automation on **[softwaretesting.com](https://magento.softwaretestingboard.com/)** with the help of [Cypress](https://www.cypress.io/) testing tool.
+
 ### What is this repository for? ###
 
 * Summary: The objective is to have a test-cases which will cover the most critical impacted areas/functionalities of business
-* [Repo link](https://bitbucket.org/monese-website-team/monese-web-automation/src/master/)
+* Login
+* SignUp
+* Add item to Cart
+* Remove item from Cart
+
 
 ### How do I get set up? ###
 
